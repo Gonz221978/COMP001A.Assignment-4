@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
@@ -20,10 +20,25 @@
              </ul>
          </nav>
          <h1>
-            Welcome to My Website
+            Welcome to Big Brass Bar
          </h1>
     </header>
     <main>
+      <!-- Beginning of the audio section -->
+      <section id="audioSample">
+        <!-- Heading for the audio section -->
+        <h2>Set the Mood</h2>
+
+        <!-- The controls' attribute adds audio controls, like play, pause, and volume -->
+        <audio controls>
+            <!-- Source for the audio file -->
+            <!-- The 'src' attribute specifies the path to the audio file -->
+            <source src="media/restaurant-164253.mp3" type="audio/mp3">
+            <!-- Fallback content in case the audio isn't supported -->
+            Your browser does not support the audio element.
+        </audio>
+
+    </section>
         <!-- Secondary menu links --> 
         <ul>
             <!-- Link to the 'intro' section -->
