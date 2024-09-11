@@ -18,23 +18,37 @@
               <li><a href="events.html" target="self">Events</a></li>
               <li><a href="forms.html" target="self">Contact Us</a></li>
              </ul>
+             <div>
+              <img src="images/Screenshot 2024-09-10 025002.png"  alt="Big Brass Bar">
+          </div>
          </nav>
-         <h1>
-            Welcome to My Website
-         </h1>
+         <section id="audioSample">
+          <!-- Heading for the audio section -->
+          <h2>Set the Mood</h2>
+  
+          <!-- The controls' attribute adds audio controls, like play, pause, and volume -->
+          <audio controls>
+              <!-- Source for the audio file -->
+              <!-- The 'src' attribute specifies the path to the audio file -->
+              <source src="media/restaurant-164253.mp3" type="audio/mp3">
+              <!-- Fallback content in case the audio isn't supported -->
+              Your browser does not support the audio element.
+          </audio>
+          <br>
+    
+      </section>
     </header>
     <main>
-        <!-- Beginning of the form element -->
+      <h1>
+        Contact Us
+     </h1>
+      <p>We’d love to hear from you! Whether you have a question, want to make a reservation, or are planning a special event, the team at Big Brass Bar is here to help.</p>
+      <p>We look forward to welcoming you to Big Brass Bar soon!</p>
+      <!-- Beginning of the form element -->
         <form action="/submit" method="post">
             <!-- Label and text input field -->
-             <label for="username">Username:</label>
-             <input type="text" id="username" name="username" placeholder="Enter your username">
-
-             <br> <!-- adds a line break -->
-
-             <!-- Label and password input field -->
-             <label for="password">Password:</label>
-             <input type="password" id="password" name="password" placeholder="Enter your password">
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="name" placeholder="Enter your name">
 
              <br>
 
@@ -44,69 +58,14 @@
 
              <br>
 
-             <!-- Label and number input field -->
-             <label for="age">Age:</label>
-             <input type="number" id="age" name="age" min="1" max="100">
-
-             <br>
-
-             <!-- Radio buttons for gender selection -->
-             <label for="male">Male:</label>
-             <input type="radio" id="male" name="gender" value="male">
-
-             <label for="female">Male:</label>
-             <input type="radio" id="female" name="gender" value="female">
-
-             <br>
-
-             <!-- Checkbox for newsletter subscription -->
-             <label for="subscribe">Subscribe to newsletter:</label>
-             <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-
-             <br>
-
-             <!-- Dropdown select for country selection -->
-             <label for="country">Country:</label>
-             <select id="country" name="country">
-                <option value="usa">USA</option>
-                <option value="canada">Canada</option>
-                <!-- other options -->
-             </select>
+             <label for="subkect">Subject:</label>
+             <input type="subject" id="subject" name="email" placeholder="Enter the subject">
 
              <br>
 
              <!-- Textarea for additional comments -->
-             <label for="comments">Comments:</label>
-             <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
-
-             <br>
-
-             <!-- File input for uploading files -->
-             <label for="file">Upload your photo:</label>
-             <input type="file" id="file" name="file">
-
-             <br>
-
-             <!-- Hidden input field (not visible to users) -->
-             <input type="hidden" id="userId" name="userId" value="12345">
-
-             <br>
-
-             <!-- Range input for selecting a value within a range -->
-             <label for="volume">Volume:</label>
-             <input type="range" id="colume" name="volume" min="0" max="10">
-
-             <br>
-
-             <!-- Date input for selecting a date -->
-             <label for="birthdate">Birth Date:</label>
-             <input type="date" id="birthdate" name="birthdate">
-
-             <br>
-
-             <!-- Color input for selecting a color -->
-             <label for="favcolor">Favorite Color:</label>
-             <input type="color" id="favcolor" name="favcolor">
+             <label for="message">Message:</label>
+             <textarea id="message" name="message" rows="4" cols="50"></textarea>
 
              <br>
 
